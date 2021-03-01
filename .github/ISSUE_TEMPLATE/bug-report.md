@@ -1,7 +1,7 @@
 ---
 name: Bug Report
 about: Create a report to help us improve
-title: "[BUG] [ws-tool-name] Issue Short Description"
+title: "[BUG] [ws-multi-repo-scanner] Issue Short Description"
 labels: bug
 assignees: ''
 
@@ -25,8 +25,10 @@ If applicable, add screenshots to help explain your problem.
 
 **Environment Details**  
  - OS: [e.g. Ubuntu 18.04]
+ - Python: [e.g. Python 3.8.0]
+ - PIP: [e.g. pip 21.0.1]
  - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+ - Tool Version [e.g. 0.0.1]
 
 **Additional Context**  
 Add any other context about the problem here.
