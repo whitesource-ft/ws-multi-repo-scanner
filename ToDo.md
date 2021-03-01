@@ -1,3 +1,4 @@
 # To Do List
-- Item 1  
-- Item 2  
+- Add file-based logging  
+- Complete GitLab integration  
+- Complete Bitbucket integration  
