@@ -12,6 +12,7 @@ def get_repos():
         # TODO need to think if we should add only repos with the provided account name ; Script won't work without it
     return repos
 
+
 def get_branches(repos):
     scmRepositories = []
     for repo in repos:
