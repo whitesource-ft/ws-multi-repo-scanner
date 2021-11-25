@@ -10,7 +10,7 @@ _misc/
 local/
 log/
 target/
-whitesource/
+scandir/
 
 # Excluded Files - Extensions
 *.iml
