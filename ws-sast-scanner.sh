@@ -36,5 +36,5 @@ done
 # Replace values in raw data (-d) with your values
 
 # SCAN_ID=$(curl -H "X-Auth-Token: ${SASTCLI_TOKEN}" ${SAST_SERVER}"/api/scans?query="${repo}| jq -r '.[0].id')
-# curl --output ./reports/${repo} --request POST ${SAST_SERVER}'/api/scans/'${SCAN_ID}'/report?format=pdf' -H 'X-Auth-Token: '${SASTCLI_TOKEN} -H 'Content-Type: application/json' \
+# curl --output ${reportdir}/${repo}.html --request POST ${SAST_SERVER}'/api/scans/'${SCAN_ID}'/report?format=html' -H 'X-Auth-Token: '${SASTCLI_TOKEN} -H 'Content-Type: application/json' \
 # -d '{ "company": "Stark Enterprises", "author": "Tony Stark", "email": "tony@stark.com", "description": "Example report", "type": "DefenseCode Default", "level": "technical" }'
