@@ -1,11 +1,11 @@
 # Prequisities = tscli curl jq git
-    # chmod +x ./ts-scanner-bb.sh
+    # chmod +x ./ts-scanner-template.sh
     # Run the below commented script only once to create a template for common exclusions
     # curl --location --request POST ${THUNDERSCAN_API_URL}'/api/templates' -H 'X-Auth-Token: '${THUNDERSCAN_API_TOKEN} -H 'Content-Type: application/json'  \
     # -d '{ "name": "common-excludes", "parameters": { "target": { "type": "", "source": "", "path": "" }, "engines": [], "trackedInputs": [], "excludedVulnTypes": null, "depth": { "maxFunctionDepth": 0, "maxVariableTrack": 0 }, "customFilters": [], "exclusions": [ "test", "lib", "docs", "swagger", "angular", "node_modules", "bootstrap", "modernizer", "yui", "dojo", "xjs", "react", "plugins", "3rd", "build", "nuget" ], "patternMatching": [], "customRules": [], "diff": false, "includeFiltered": false, "ignoreStoredFP": false, "deepInputDiscovery": true, "almTrigger": "", "emailTrigger": "", "slackTrigger": "" } }'
 
 # Usage
-    # ./ts-scanner-bb.sh scanlist.txt
+    # ./ts-scanner-template.sh scanlist.txt
 # scanlist is a list of git repos
 # mkdir /opt/thunderscan/reports && mkdir /opt/thunderscan/templates
 
