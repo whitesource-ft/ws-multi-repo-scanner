@@ -2,12 +2,11 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# WhiteSource Multi-Repo Scanner
-The WhiteSource Multi-Repo Scanner (ws-multi-repo-scanner) is a bash utlity for scanning multiple code repositories using [dockerized unified agent](https://hub.docker.com/r/whitesourceft/dockerua)
+# GitLab Multi-Repo Scanner
+The GitLab Multi-Repo Scanner (gitlab-scanner) is a bash utlity for scanning multiple code repositories from GitLab using the [dockerized unified agent](https://hub.docker.com/r/whitesourceft/dockerua)
 
 ## Supported Environments
 - GitLab
-
 
 ## Supported Operating Systems
 - **Linux (Bash):**	CentOS, Debian, Ubuntu, RedHat
@@ -36,7 +35,6 @@ export WS_APIKEY=<your-api-key>
 export WS_USERKEY=<your-user-key>
 ```
 
-
 ## Execution
 ### Execution Instructions
 ```
@@ -44,4 +42,39 @@ export WS_USERKEY=<your-user-key>
 ```
 
 ### Exit Codes
+
+![Logo](https://whitesource-resources.s3.amazonaws.com/ws-sig-images/Whitesource_Logo_178x44.png)  
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
+# WhiteSource SAST Multi-Repo Scanners
+The WhiteSource SAST Multi-Repo Scanners (WS-SAST-Scanners) are a group of bash scripts for scanning multiple code repositories using WhiteSource SAST & ThunderScan.
+
+## Supported Environments
+- List of Git repositories
+
+
+## Supported Operating Systems
+- **Linux (Bash):**	CentOS, Debian, Ubuntu, RedHat
+
+## Prerequisites
+- git
+- curl
+- jq 
+- tscli or wscli
+
+
+## Execution
+### Execution Instructions
+- Individual script usage instructions are located within each script, but the general usage is the following where scanlist.txt is a list of git repositories for cloning
+```
+chmod +x script.sh
+./script.sh scanlist.txt
+```
+- ws-sast-scanner - WS-SAST
+- ts-scanner - ThunderScan script without templates
+- ts-scanner-template - ThunderScan script that uses templates
+
+### Exit Codes
+
 
