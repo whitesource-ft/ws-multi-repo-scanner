@@ -20,7 +20,7 @@ reportdir=/opt/thunderscan/reports
 file=$1
 lines=`cat ${file}`
 for line in $lines; do
-    repo=$(echo ${line} | awk -F "/" '{print $5}' | awk -F "." '{print $1}')
+    repo=$(basename -s .git $line)
     branch=$(git ls-remote --symref ${line} HEAD | awk '/^ref:/ {sub(/refs\/heads\//, "", $2); print $2}')
     echo "Scanning repo=${repo} branch=${branch}"
     ${wscli} --git ${line} --branch ${branch} --name ${repo}-${branch} --parent ${repo} --autoparent true
