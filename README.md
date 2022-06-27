@@ -1,4 +1,4 @@
-![Logo](https://whitesource-resources.s3.amazonaws.com/ws-sig-images/Whitesource_Logo_178x44.png)  
+![Logo](https://resources.mend.io/mend-sig/logo/mend-dark-logo-horizontal.png)  
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -29,7 +29,7 @@ git config --global url."https://${GITLAB_USER}:${GITLAB_TOKEN}@gitlab.com".inst
 ```
 You can double-check your global git config by using ```git config --global --list```
 
-### WhiteSource Access
+### Mend Access
 ```
 export WS_APIKEY=<your-api-key>
 export WS_USERKEY=<your-user-key>
@@ -43,12 +43,12 @@ export WS_USERKEY=<your-user-key>
 
 ### Exit Codes
 
-![Logo](https://whitesource-resources.s3.amazonaws.com/ws-sig-images/Whitesource_Logo_178x44.png)  
+![Logo](https://resources.mend.io/mend-sig/logo/mend-dark-logo-horizontal.png)  
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# WhiteSource SAST Multi-Repo Scanners
-The WhiteSource SAST Multi-Repo Scanners (WS-SAST-Scanners) are a group of bash scripts for scanning multiple code repositories using WhiteSource SAST & ThunderScan.
+# Mend SAST Multi-Repo Scanners
+The Mend SAST Multi-Repo Scanners (WS-SAST-Scanners) are a group of bash scripts for scanning multiple code repositories using Mend SAST.
 
 ## Supported Environments
 - List of Git repositories
